@@ -40,7 +40,7 @@ return static function (ContainerConfigurator $configurator) {
 ```
 
 ## Переопределение шаблонов
-Шаблоны пееропределяются в директории templates в виде текстового представления (content.html.twig), и шаблона (template.html.twig)
+Шаблоны переопределяются в директории templates в виде текстового представления (content.html.twig), и шаблона (template.html.twig)
 
 - /templates/CountryField/content.html.twig
 - /templates/CountryField/template.html.twig
