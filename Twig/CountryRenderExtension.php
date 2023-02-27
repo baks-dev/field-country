@@ -23,10 +23,9 @@
  *
  */
 
-namespace BaksDev\Field\Tire\Radius\Twig;
+namespace BaksDev\Field\Country\Twig;
 
-use BaksDev\Field\Tire\Radius\Type\TireRadiusEnum;
-use BaksDev\Field\Tire\Radius\Type\TireRadiusField;
+use BaksDev\Field\Country\Type\Country;
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\Extension\AbstractExtension;
@@ -37,7 +36,7 @@ final class CountryRenderExtension extends AbstractExtension
 	public function getFunctions() : array
 	{
 		return [
-			new TwigFunction(TireRadiusField::TYPE.'_render', [$this, 'render'], ['needs_environment' => true, 'is_safe' => ['html']]),
+			new TwigFunction(Country::TYPE.'_render', [$this, 'render'], ['needs_environment' => true, 'is_safe' => ['html']]),
 		];
 	}
 	

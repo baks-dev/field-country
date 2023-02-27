@@ -59,7 +59,8 @@ final class CountryFieldForm extends AbstractType
 				return $status->getCountryEnumValue();
 			},
 			'translation_domain' => 'field.country',
-			'placeholder' => 'placeholder'
+			'placeholder' => 'placeholder',
+			'attr' => ['data-select' => 'select2']
 		]);
 	}
 	
