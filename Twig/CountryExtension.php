@@ -36,11 +36,13 @@ final class CountryExtension extends AbstractExtension
 	public function getFunctions() : array
 	{
 		return [
-			new TwigFunction(Country::TYPE, [$this, 'call'], ['needs_environment' => true, 'is_safe' => ['html']]),
+			new TwigFunction(Country::TYPE, [$this, 'content'], ['needs_environment' => true, 'is_safe' => ['html']]),
+			new TwigFunction(Country::TYPE.'_render', [$this, 'render'], ['needs_environment' => true, 'is_safe' => ['html']]),
+			new TwigFunction(Country::TYPE.'_template', [$this, 'template'], ['needs_environment' => true, 'is_safe' => ['html']]),
 		];
 	}
 	
-	public function call(Environment $twig, string $value) : string
+	public function content(Environment $twig, string $value) : string
 	{
 		try
 		{
@@ -49,6 +51,30 @@ final class CountryExtension extends AbstractExtension
 		catch(LoaderError $loaderError)
 		{
 			return $twig->render('@CountryField/content.html.twig', ['value' => $value]);
+		}
+	}
+	
+	public function render(Environment $twig, $value) : string
+	{
+		try
+		{
+			return $twig->render('@Template/CountryField/render.html.twig', ['value' => $value]);
+		}
+		catch(LoaderError $loaderError)
+		{
+			return $twig->render('@CountryField/render.html.twig', ['value' => $value]);
+		}
+	}
+	
+	public function template(Environment $twig, $value) : string
+	{
+		try
+		{
+			return $twig->render('@Template/CountryField/template.html.twig', ['value' => $value]);
+		}
+		catch(LoaderError $loaderError)
+		{
+			return $twig->render('@CountryField/template.html.twig', ['value' => $value]);
 		}
 	}
 	

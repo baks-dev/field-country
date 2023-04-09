@@ -26,10 +26,11 @@ declare(strict_types=1);
 namespace BaksDev\Field\Country\Choice;
 
 use BaksDev\Core\Services\Fields\FieldsChoiceInterface;
+use BaksDev\Core\Services\Reference\ReferenceChoiceInterface;
 use BaksDev\Field\Country\Form\CountryFieldForm;
 use BaksDev\Field\Country\Type\Country;
 
-final class CountryFieldChoice implements FieldsChoiceInterface
+final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoiceInterface
 {
 	public function equals($key) : bool
 	{
