@@ -53,5 +53,10 @@ final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoice
 	{
 		return CountryFieldForm::class;
 	}
+
+    public function class(): string
+    {
+        return Country::class;
+    }
 	
 }
