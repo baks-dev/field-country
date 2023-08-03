@@ -2,8 +2,6 @@
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use BaksDev\Field\Pack\Integer\Choice\IntegerFieldChoice;
-
 return static function (ContainerConfigurator $configurator) {
 	
 	$services = $configurator->services()
@@ -11,10 +9,13 @@ return static function (ContainerConfigurator $configurator) {
 		->autowire(true)
 		->autoconfigure(true)
 	;
+
+    $NAMESPACE = 'BaksDev\Field\Country\\';
+
+    $MODULE = substr(__DIR__, 0, strpos(__DIR__, "Resources"));
 	
-	$namespace = 'BaksDev\Field\Country';
-	
-	$services->load($namespace.'\Form\\', __DIR__.'/../../Form');
-	
+	$services->load($NAMESPACE.'Form\\', $MODULE.'Form');
+	$services->load($NAMESPACE.'Twig\\', $MODULE.'Twig');
+
 };
 
