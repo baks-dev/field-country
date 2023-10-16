@@ -37,19 +37,19 @@ final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoice
 		return $key === Country::TYPE;
 	}
 	
-	public function type() : string
+	public function type(): string
 	{
 		return Country::TYPE;
 	}
 	
 	
-	public function domain() : string
+	public function domain(): string
 	{
 		return 'field.country';
 	}
 	
 	/** Возвращает класс формы для рендера */
-	public function form() : string
+	public function form(): string
 	{
 		return CountryFieldForm::class;
 	}

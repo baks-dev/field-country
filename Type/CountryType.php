@@ -33,19 +33,19 @@ final class CountryType extends StringType
 	public const NAME = 'country_type';
 	
 	
-	public function convertToDatabaseValue($value, AbstractPlatform $platform) : mixed
+	public function convertToDatabaseValue($value, AbstractPlatform $platform): mixed
 	{
 		return $value instanceof Country ? $value->getValue() : (new Country($value))->getValue();
 	}
 	
 	
-	public function convertToPHPValue($value, AbstractPlatform $platform) : mixed
+	public function convertToPHPValue($value, AbstractPlatform $platform): mixed
 	{
 		return !empty($value) ? new Country($value) : $value;
 	}
 	
 	
-	public function getName() : string
+	public function getName(): string
 	{
 		return self::NAME;
 	}

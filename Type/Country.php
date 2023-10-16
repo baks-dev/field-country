@@ -46,7 +46,7 @@ final class Country
 	}
 	
 	
-	public function __toString() : string
+	public function __toString(): string
 	{
 		return $this->country->value;
 	}
@@ -60,14 +60,14 @@ final class Country
 	
 	
 	/** Возвращает значение (value) страны String */
-	public function getCountryEnumValue() : string
+	public function getCountryEnumValue(): string
 	{
 		return $this->country->value;
 	}
 	
 	
 	/** Возвращает ключ (name) Enum страны */
-	public function getCountryEnumName() : string
+	public function getCountryEnumName(): string
 	{
 		return $this->country->name;
 	}
