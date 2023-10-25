@@ -25,65 +25,111 @@
 
 namespace BaksDev\Field\Country\Type;
 
+use BaksDev\Field\Country\Type\Country\Collection\CountryInterface;
+use InvalidArgumentException;
+
 final class Country
 {
 	
 	public const TYPE = 'country_type';
 	
-	private CountryEnum $country;
+	private CountryInterface $country;
 	
 	
-	public function __construct(string|CountryEnum $country)
+	public function __construct(CountryInterface|self|string $country)
 	{
-		if($country instanceof CountryEnum)
-		{
-			$this->country = $country;
-		}
-		else
-		{
-			$this->country = CountryEnum::from($country);
-		}
+        if(is_string($country) && class_exists($country))
+        {
+            $instance = new $country();
+
+            if($instance instanceof CountryInterface)
+            {
+                $this->country = $instance;
+                return;
+            }
+        }
+
+        if($country instanceof CountryInterface)
+        {
+            $this->country = $country;
+            return;
+        }
+
+        if($country instanceof self)
+        {
+            $this->country = $country->getCountry();
+            return;
+        }
+
+        /** @var CountryInterface $declare */
+        foreach(self::getDeclared() as $declare)
+        {
+            if($declare::equals($country))
+            {
+                $this->country = new $declare;
+                return;
+            }
+        }
+
+        throw new InvalidArgumentException(sprintf('Not found Country %s', $country));
+
 	}
-	
-	
+
 	public function __toString(): string
 	{
-		return $this->country->value;
+		return $this->country->getValue();
 	}
-	
-	
-	/** Возвращает Enum страны   */
-	public function getCountryEnum() : CountryEnum
+
+	public function getCountry() : CountryInterface
 	{
 		return $this->country;
 	}
 	
-	
-	/** Возвращает значение (value) страны String */
-	public function getCountryEnumValue(): string
+
+	public function getCountryValue(): string
 	{
-		return $this->country->value;
+		return $this->country->getValue();
 	}
 	
-	
-	/** Возвращает ключ (name) Enum страны */
-	public function getCountryEnumName(): string
-	{
-		return $this->country->name;
-	}
-	
-	
-	/** Возвращает массив из значнией CountryEnum */
-	public static function cases() : array
-	{
-		$case = null;
-		
-		foreach(CountryEnum::cases() as $color)
-		{
-			$case[] = new self($color);
-		}
-		
-		return $case;
-	}
+
+    public static function cases(): array
+    {
+        $case = [];
+
+        foreach(self::getDeclared() as $declare)
+        {
+            /** @var CountryInterface $declare */
+            $class = new $declare;
+            $case[$class::COUNTRY] = new self($class);
+        }
+
+        ksort($case);
+
+        return $case;
+    }
+
+    public static function getDeclared(): array
+    {
+        return array_filter(
+            get_declared_classes(),
+            static function($className) {
+                return in_array(CountryInterface::class, class_implements($className), true);
+            }
+        );
+    }
+
+    public function equals(mixed $country): bool
+    {
+        $country = new self($country);
+
+        return $this->getCountryValue() === $country->getCountryValue();
+    }
+
+
+
+
+
+
+
 	
 }

@@ -26,6 +26,7 @@ declare(strict_types=1);
 namespace BaksDev\Field\Country\Form;
 
 use BaksDev\Field\Country\Type\Country;
+use BaksDev\Field\Country\Type\Country\Collection\CountryInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -52,11 +53,11 @@ final class CountryFieldForm extends AbstractType
 
 		$resolver->setDefaults([
 			'choices' => Country::cases(),
-			'choice_value' => function($country) {
-				return $country?->getCountryEnumValue();
+			'choice_value' => function(?Country $country) {
+				return $country?->getCountryValue();
 			},
-			'choice_label' => function($status) {
-				return $status->getCountryEnumValue();
+			'choice_label' => function(Country $country) {
+				return $country->getCountryValue();
 			},
 			'translation_domain' => 'field.country',
 			'placeholder' => 'placeholder',

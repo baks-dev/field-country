@@ -35,13 +35,13 @@ final class CountryType extends StringType
 	
 	public function convertToDatabaseValue($value, AbstractPlatform $platform): mixed
 	{
-		return $value instanceof Country ? $value->getValue() : (new Country($value))->getValue();
+		return (string) $value;
 	}
 	
 	
 	public function convertToPHPValue($value, AbstractPlatform $platform): mixed
 	{
-		return !empty($value) ? new Country($value) : $value;
+		return new Country($value);
 	}
 	
 	

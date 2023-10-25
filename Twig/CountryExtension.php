@@ -46,11 +46,11 @@ final class CountryExtension extends AbstractExtension
 	{
 		try
 		{
-			return $twig->render('@Template/CountryField/content.html.twig', ['value' => $value]);
+			return $twig->render('@Template/field-country/content.html.twig', ['value' => $value]);
 		}
 		catch(LoaderError $loaderError)
 		{
-			return $twig->render('@CountryField/content.html.twig', ['value' => $value]);
+			return $twig->render('@field-country/content.html.twig', ['value' => $value]);
 		}
 	}
 	
@@ -58,11 +58,11 @@ final class CountryExtension extends AbstractExtension
 	{
 		try
 		{
-			return $twig->render('@Template/CountryField/render.html.twig', ['value' => $value]);
+			return $twig->render('@Template/field-country/render.html.twig', ['value' => $value]);
 		}
 		catch(LoaderError $loaderError)
 		{
-			return $twig->render('@CountryField/render.html.twig', ['value' => $value]);
+			return $twig->render('@field-country/render.html.twig', ['value' => $value]);
 		}
 	}
 	
@@ -70,11 +70,11 @@ final class CountryExtension extends AbstractExtension
 	{
 		try
 		{
-			return $twig->render('@Template/CountryField/template.html.twig', ['value' => $value]);
+			return $twig->render('@Template/field-country/template.html.twig', ['value' => $value]);
 		}
 		catch(LoaderError $loaderError)
 		{
-			return $twig->render('@CountryField/template.html.twig', ['value' => $value]);
+			return $twig->render('@field-country/template.html.twig', ['value' => $value]);
 		}
 	}
 	

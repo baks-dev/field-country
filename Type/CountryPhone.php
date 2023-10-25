@@ -27,48 +27,8 @@ namespace BaksDev\Field\Country\Type;
 
 enum CountryPhone : int
 {
-	case Andorra = 376;
-	case UnitedArabEmirates = 971;
-	case Afghanistan = 93;
-	case AntiguaAndBarbuda = 1268;
-	case Anguilla = 1264;
-	case Albania = 355;
-	case Armenia = 374;
-	case Angola = 244;
-	case Antarctica = 672;
-	case Argentina = 54;
-	case AmericanSamoa = 684;
-	case Austria = 43;
-	case Australia = 61;
-	case Aruba = 297;
-	case AlandIslands = 35818;
-	case Azerbaijan = 994;
-	case BosniaAndHerzegovina = 387;
-	case Barbados = 1246;
-	case Bangladesh = 880;
-	case Belgium = 32;
-	case BurkinaFaso = 226;
-	case Bulgaria = 359;
-	case Bahrain = 973;
-	case Burundi = 257;
-	case Benin = 229;
-	case StBarthelemy = 590;
-	case Bermuda = 1441;
-	case Brunei = 673;
-	case Bolivia = 591;
-	case CaribbeanNetherlands = 599;
-	case Brazil = 55;
-	case Bahamas = 1242;
-	case Bhutan = 975;
-	case BouvetIsland = 47;
-	case Botswana = 267;
-	case Belarus = 375;
-	case Belize = 501;
-	case Canada = 1;
-	case CocosIslands = 618;
-	case CongoKinshasa = 243;
-	case CentralAfricanRepublic = 236;
-	case CongoBrazzaville = 242;
+
+
 //	case Switzerland = 'ch';
 //	case CoteDIvoire = 'ci';
 //	case CookIslands = 'ck';
@@ -88,7 +48,7 @@ enum CountryPhone : int
 //	case Denmark = 'dk';
 //	case Dominica = 'dm';
 //	case DominicanRepublic = 'do';
-	case Algeria = 213;
+
 //	case Ecuador = 'ec';
 //	case Estonia = 'ee';
 //	case Egypt = 'eg';
@@ -172,7 +132,7 @@ enum CountryPhone : int
 //	case MarshallIslands = 'mh';
 //	case NorthMacedonia = 'mk';
 //	case Mali = 'ml';
-	case Myanmar = 95;
+
 //	case Mongolia = 'mn';
 //	case Macao = 'mo';
 //	case NorthernMarianaIslands = 'mp';

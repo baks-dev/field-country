@@ -1,6 +1,6 @@
 # BaksDev Field Country 
 
-![Version](https://img.shields.io/badge/version-6.3.3-blue) ![php 8.1+](https://img.shields.io/badge/php-min%208.1-red.svg)
+![Version](https://img.shields.io/badge/version-6.3.4-blue) ![php 8.1+](https://img.shields.io/badge/php-min%208.1-red.svg)
 
 Пакет выпадающего списка стран
 
@@ -42,13 +42,9 @@ return static function (ContainerConfigurator $configurator) {
 ## Переопределение шаблонов
 Шаблоны переопределяются в директории templates в виде текстового представления (content.html.twig), и шаблона (template.html.twig)
 
-- /templates/CountryField/content.html.twig
-- /templates/CountryField/template.html.twig
+- /templates/field-country/content.html.twig
+- /templates/field-country/template.html.twig
 
-
-## Журнал изменений ![Changelog](https://img.shields.io/badge/changelog-yellow)
-
-О том, что изменилось за последнее время, обратитесь к [CHANGELOG](CHANGELOG.md) за дополнительной информацией.
 
 ## Лицензия ![License](https://img.shields.io/badge/MIT-green)
 
