@@ -29,7 +29,7 @@ use BaksDev\Field\Country\Type\Country\Collection\CountryInterface;
 use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 
 #[AutoconfigureTag('baks.country')]
-final class A implements CountryInterface
+final class Zambia implements CountryInterface
 {
     public const COUNTRY = 'zm';
 
