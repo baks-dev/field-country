@@ -16,6 +16,7 @@ return static function (ContainerConfigurator $configurator) {
 	
 	$services->load($NAMESPACE.'Form\\', $MODULE.'Form');
 	$services->load($NAMESPACE.'Twig\\', $MODULE.'Twig');
+	$services->load($NAMESPACE.'Listeners\\', $MODULE.'Listeners');
 
 	$services->load($NAMESPACE.'Type\Country\\', $MODULE.'Type/Country');
 
