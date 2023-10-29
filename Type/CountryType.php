@@ -41,7 +41,7 @@ final class CountryType extends StringType
 	
 	public function convertToPHPValue($value, AbstractPlatform $platform): mixed
 	{
-		return new Country($value);
+        return !empty($value) ? new Country($value) : null;
 	}
 	
 	
