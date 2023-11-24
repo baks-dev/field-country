@@ -47,7 +47,7 @@ final class Afghanistan implements CountryInterface
     /** Проверяет, относится ли значение к данному объекту */
     public static function equals(string $country): bool
     {
-        return strtolower($country) === self::COUNTRY;
+        return mb_strtolower($country) === self::COUNTRY;
     }
 
 
