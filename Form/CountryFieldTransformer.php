@@ -31,8 +31,8 @@ use Symfony\Component\Form\DataTransformerInterface;
 final class CountryFieldTransformer implements DataTransformerInterface
 {
 	
-	public function transform(mixed $value)
-	{
+	public function transform(mixed $value): ?Country
+    {
 		if(empty($value)) { return null; }
 		
 		return new Country($value);
