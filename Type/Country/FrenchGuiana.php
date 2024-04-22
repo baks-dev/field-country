@@ -33,15 +33,21 @@ final class FrenchGuiana implements CountryInterface
 {
     public const COUNTRY = 'gf';
 
+    public const ALPHA = 'GUF';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '254';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

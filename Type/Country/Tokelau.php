@@ -33,15 +33,21 @@ final class Tokelau implements CountryInterface
 {
     public const COUNTRY = 'tk';
 
+    public const ALPHA = 'TKL';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '772';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

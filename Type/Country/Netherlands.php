@@ -33,15 +33,21 @@ final class Netherlands implements CountryInterface
 {
     public const COUNTRY = 'nl';
 
+    public const ALPHA = 'NLD';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '528';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

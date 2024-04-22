@@ -33,15 +33,21 @@ final class Oman implements CountryInterface
 {
     public const COUNTRY = 'om';
 
+    public const ALPHA = 'OMN';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '512';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

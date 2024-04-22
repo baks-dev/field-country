@@ -33,15 +33,21 @@ final class Micronesia implements CountryInterface
 {
     public const COUNTRY = 'fm';
 
+    public const ALPHA = 'FSM';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '583';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

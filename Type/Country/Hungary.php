@@ -33,15 +33,21 @@ final class Hungary implements CountryInterface
 {
     public const COUNTRY = 'hu';
 
+    public const ALPHA = 'HUN';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '348';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

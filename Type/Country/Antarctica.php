@@ -33,15 +33,21 @@ final class Antarctica implements CountryInterface
 {
     public const COUNTRY = 'aq';
 
+    public const ALPHA = 'ATA';
+
+    public const PHONE = 672;
+
+    public const NUMERIC = '010';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 672;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Canada implements CountryInterface
 {
     public const COUNTRY = 'ca';
 
+    public const ALPHA = 'CAN';
+
+    public const PHONE = 1;
+    
+    public const NUMERIC = '124';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 1;
+        return self::PHONE;
     }
 
 

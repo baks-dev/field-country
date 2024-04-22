@@ -33,13 +33,19 @@ final class Barbados implements CountryInterface
 {
     public const COUNTRY = 'bb';
 
+    public const ALPHA = 'BRB';
+
+    public const PHONE = 1246;
+    
+    public const NUMERIC = '052';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
         return 1246;
     }

@@ -33,15 +33,21 @@ final class Fiji implements CountryInterface
 {
     public const COUNTRY = 'fj';
 
+    public const ALPHA = 'FJI';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '242';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

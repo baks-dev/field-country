@@ -33,15 +33,21 @@ final class SouthAfrica implements CountryInterface
 {
     public const COUNTRY = 'za';
 
+    public const ALPHA = 'ZAF';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '710';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

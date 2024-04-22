@@ -33,15 +33,21 @@ final class Bulgaria implements CountryInterface
 {
     public const COUNTRY = 'bg';
 
+    public const ALPHA = 'BGR';
+
+    public const PHONE = 359;
+
+    public const NUMERIC = '100';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 359;
+        return self::PHONE;
     }
 
 

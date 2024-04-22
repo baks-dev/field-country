@@ -33,15 +33,21 @@ final class Honduras implements CountryInterface
 {
     public const COUNTRY = 'hn';
 
+    public const ALPHA = 'HND';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '340';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

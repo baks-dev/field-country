@@ -33,15 +33,21 @@ final class CocosIslands implements CountryInterface
 {
     public const COUNTRY = 'cc';
 
+    public const ALPHA = 'CCK';
+
+    public const PHONE = 618;
+
+    public const NUMERIC = '166';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 618;
+        return self::PHONE;
     }
 
 

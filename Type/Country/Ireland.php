@@ -33,15 +33,21 @@ final class Ireland implements CountryInterface
 {
     public const COUNTRY = 'ie';
 
+    public const ALPHA = 'IRL';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '372';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

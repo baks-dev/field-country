@@ -33,15 +33,21 @@ final class Australia implements CountryInterface
 {
     public const COUNTRY = 'au';
 
+    public const ALPHA = 'AUS';
+
+    public const PHONE = 61;
+    
+    public const NUMERIC = '036';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 61;
+        return self::PHONE;
     }
 
 

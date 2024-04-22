@@ -33,15 +33,21 @@ final class Nepal implements CountryInterface
 {
     public const COUNTRY = 'np';
 
+    public const ALPHA = 'NPL';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '524';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

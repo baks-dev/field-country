@@ -34,7 +34,7 @@ interface CountryInterface
     public function getValue(): string;
 
     /** Возвращает значение (value) */
-    public function getCode(): ?int;
+    public function getPhoneCode(): ?int;
 
     /** Проверяет, относится ли значение к данному объекту */
     public static function equals(string $country): bool;

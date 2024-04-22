@@ -33,15 +33,21 @@ final class CoteDIvoire implements CountryInterface
 {
     public const COUNTRY = 'ci';
 
+    public const ALPHA = 'CIV';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '384';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

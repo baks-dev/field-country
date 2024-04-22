@@ -33,15 +33,21 @@ final class Turkmenistan implements CountryInterface
 {
     public const COUNTRY = 'tm';
 
+    public const ALPHA = 'TKM';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '795';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

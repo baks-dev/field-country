@@ -33,15 +33,21 @@ final class Lebanon implements CountryInterface
 {
     public const COUNTRY = 'lb';
 
+    public const ALPHA = 'LBN';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '422';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

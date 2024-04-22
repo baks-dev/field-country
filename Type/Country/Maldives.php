@@ -33,15 +33,21 @@ final class Maldives implements CountryInterface
 {
     public const COUNTRY = 'mv';
 
+    public const ALPHA = 'MDV';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '462';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

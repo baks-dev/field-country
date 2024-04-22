@@ -33,15 +33,21 @@ final class Poland implements CountryInterface
 {
     public const COUNTRY = 'pl';
 
+    public const ALPHA = 'POL';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '616';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

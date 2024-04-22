@@ -33,15 +33,21 @@ final class Albania implements CountryInterface
 {
     public const COUNTRY = 'al';
 
+    public const ALPHA = 'ALB';
+
+    public const PHONE = 355;
+
+    public const NUMERIC = '008';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 355;
+        return self::PHONE;
     }
 
 

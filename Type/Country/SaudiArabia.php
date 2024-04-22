@@ -33,15 +33,21 @@ final class SaudiArabia implements CountryInterface
 {
     public const COUNTRY = 'sa';
 
+    public const ALPHA = 'SAU';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '682';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

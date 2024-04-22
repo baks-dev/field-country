@@ -33,15 +33,21 @@ final class Bolivia implements CountryInterface
 {
     public const COUNTRY = 'bo';
 
+    public const ALPHA = 'BOL';
+
+    public const PHONE = 591;
+    
+    public const NUMERIC = '068';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 591;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Armenia implements CountryInterface
 {
     public const COUNTRY = 'am';
 
+    public const ALPHA = 'ARM';
+
+    public const PHONE = 374;
+
+    public const NUMERIC = '051';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 374;
+        return self::PHONE;
     }
 
 

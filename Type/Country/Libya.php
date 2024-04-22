@@ -33,15 +33,21 @@ final class Libya implements CountryInterface
 {
     public const COUNTRY = 'ly';
 
+    public const ALPHA = 'LBY';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '434';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

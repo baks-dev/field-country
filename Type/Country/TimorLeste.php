@@ -33,15 +33,21 @@ final class TimorLeste implements CountryInterface
 {
     public const COUNTRY = 'tl';
 
+    public const ALPHA = 'TLS';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '626';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

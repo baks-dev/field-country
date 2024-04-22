@@ -33,15 +33,21 @@ final class Brunei implements CountryInterface
 {
     public const COUNTRY = 'bn';
 
+    public const ALPHA = 'BRN';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '096';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class SouthSudan implements CountryInterface
 {
     public const COUNTRY = 'ss';
 
+    public const ALPHA = 'SSD';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '728';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

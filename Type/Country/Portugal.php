@@ -33,15 +33,21 @@ final class Portugal implements CountryInterface
 {
     public const COUNTRY = 'pt';
 
+    public const ALPHA = 'PRT';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '620';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

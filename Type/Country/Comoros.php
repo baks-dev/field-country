@@ -33,15 +33,21 @@ final class Comoros implements CountryInterface
 {
     public const COUNTRY = 'km';
 
+    public const ALPHA = 'COM';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '174';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

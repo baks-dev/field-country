@@ -33,15 +33,21 @@ final class Botswana implements CountryInterface
 {
     public const COUNTRY = 'bw';
 
+    public const ALPHA = 'BWA';
+
+    public const PHONE = 267;
+
+    public const NUMERIC = '072';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 267;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Yemen implements CountryInterface
 {
     public const COUNTRY = 'ye';
 
+    public const ALPHA = 'YEM';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '887';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

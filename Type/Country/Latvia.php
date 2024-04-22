@@ -33,15 +33,21 @@ final class Latvia implements CountryInterface
 {
     public const COUNTRY = 'lv';
 
+    public const ALPHA = 'LVA';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '428';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

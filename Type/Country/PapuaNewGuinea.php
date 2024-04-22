@@ -33,15 +33,21 @@ final class PapuaNewGuinea implements CountryInterface
 {
     public const COUNTRY = 'pg';
 
+    public const ALPHA = 'PNG';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '598';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

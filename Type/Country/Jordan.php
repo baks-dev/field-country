@@ -33,15 +33,21 @@ final class Jordan implements CountryInterface
 {
     public const COUNTRY = 'jo';
 
+    public const ALPHA = 'JOR';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '400';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

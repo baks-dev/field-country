@@ -33,15 +33,21 @@ final class Norway implements CountryInterface
 {
     public const COUNTRY = 'no';
 
+    public const ALPHA = 'NOR';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '578';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

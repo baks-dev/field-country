@@ -33,15 +33,21 @@ final class Mauritania implements CountryInterface
 {
     public const COUNTRY = 'mr';
 
+    public const ALPHA = 'MRT';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '478';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

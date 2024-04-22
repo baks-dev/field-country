@@ -45,7 +45,7 @@ final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoice
 	
 	public function domain(): string
 	{
-		return 'field.country';
+		return 'field-country';
 	}
 	
 	/** Возвращает класс формы для рендера */
@@ -57,6 +57,11 @@ final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoice
     public function class(): string
     {
         return Country::class;
+    }
+
+    public function constraints(): ?array
+    {
+        return null;
     }
 	
 }

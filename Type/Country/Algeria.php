@@ -33,15 +33,21 @@ final class Algeria implements CountryInterface
 {
     public const COUNTRY = 'dz';
 
+    public const ALPHA = 'DZA';
+
+    public const PHONE = 213;
+
+    public const NUMERIC = '012';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 213;
+        return self::PHONE;
     }
 
 

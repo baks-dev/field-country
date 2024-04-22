@@ -33,15 +33,21 @@ final class BouvetIsland implements CountryInterface
 {
     public const COUNTRY = 'bv';
 
+    public const ALPHA = 'BVT';
+
+    public const PHONE = 47;
+    
+    public const NUMERIC = '074';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 47;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class UnitedArabEmirates implements CountryInterface
 {
     public const COUNTRY = 'ae';
 
+    public const ALPHA = 'ARE';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '784';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 971;
+        return self::PHONE;
     }
 
 

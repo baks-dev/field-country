@@ -33,15 +33,21 @@ final class UnitedKingdom implements CountryInterface
 {
     public const COUNTRY = 'gb';
 
+    public const ALPHA = 'GBR';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '826';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

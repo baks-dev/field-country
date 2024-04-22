@@ -59,7 +59,7 @@ final class CountryFieldForm extends AbstractType
 			'choice_label' => function(Country $country) {
 				return $country->getCountryValue();
 			},
-			'translation_domain' => 'field.country',
+			'translation_domain' => 'field-country',
 			'placeholder' => 'placeholder',
 			'attr' => ['data-select' => 'select2']
 		]);

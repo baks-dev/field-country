@@ -33,15 +33,21 @@ final class Ecuador implements CountryInterface
 {
     public const COUNTRY = 'ec';
 
+    public const ALPHA = 'ECU';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '218';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

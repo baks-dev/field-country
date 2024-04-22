@@ -33,15 +33,21 @@ final class Israel implements CountryInterface
 {
     public const COUNTRY = 'il';
 
+    public const ALPHA = 'ISR';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '376';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

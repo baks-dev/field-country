@@ -33,15 +33,21 @@ final class Andorra implements CountryInterface
 {
     public const COUNTRY = 'ad';
 
+    public const ALPHA = 'AND';
+
+    public const PHONE = 376;
+
+    public const NUMERIC = '020';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 376;
+        return self::PHONE;
     }
 
 

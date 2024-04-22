@@ -33,15 +33,21 @@ final class Georgia implements CountryInterface
 {
     public const COUNTRY = 'ge';
 
+    public const ALPHA = 'GEO';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '268';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

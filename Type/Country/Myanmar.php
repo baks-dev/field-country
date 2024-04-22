@@ -33,15 +33,21 @@ final class Myanmar implements CountryInterface
 {
     public const COUNTRY = 'mm';
 
+    public const ALPHA = 'MMR';
+
+    public const PHONE = 95;
+
+    public const NUMERIC = '104';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 95;
+        return self::PHONE;
     }
 
 

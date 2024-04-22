@@ -33,15 +33,21 @@ final class Cuba implements CountryInterface
 {
     public const COUNTRY = 'cu';
 
+    public const ALPHA = 'CUB';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '192';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

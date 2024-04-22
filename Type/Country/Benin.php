@@ -33,15 +33,21 @@ final class Benin implements CountryInterface
 {
     public const COUNTRY = 'bj';
 
+    public const ALPHA = 'BEN';
+
+    public const PHONE = 229;
+    
+    public const NUMERIC = '204';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 229;
+        return self::PHONE;
     }
 
 

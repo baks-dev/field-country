@@ -33,15 +33,21 @@ final class Guam implements CountryInterface
 {
     public const COUNTRY = 'gu';
 
+    public const ALPHA = 'GUM';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '316';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

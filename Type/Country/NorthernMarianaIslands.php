@@ -33,15 +33,21 @@ final class NorthernMarianaIslands implements CountryInterface
 {
     public const COUNTRY = 'mp';
 
+    public const ALPHA = 'MNP';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '580';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

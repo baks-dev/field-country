@@ -33,15 +33,21 @@ final class Malawi implements CountryInterface
 {
     public const COUNTRY = 'mw';
 
+    public const ALPHA = 'MWI';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '454';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

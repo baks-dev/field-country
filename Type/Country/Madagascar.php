@@ -33,15 +33,21 @@ final class Madagascar implements CountryInterface
 {
     public const COUNTRY = 'mg';
 
+    public const ALPHA = 'MDG';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '450';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

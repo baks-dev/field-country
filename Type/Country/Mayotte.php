@@ -33,15 +33,21 @@ final class Mayotte implements CountryInterface
 {
     public const COUNTRY = 'yt';
 
+    public const ALPHA = 'MYT';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '175';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

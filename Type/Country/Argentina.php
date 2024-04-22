@@ -33,15 +33,21 @@ final class Argentina implements CountryInterface
 {
     public const COUNTRY = 'ar';
 
+    public const ALPHA = 'ARG';
+
+    public const PHONE = 54;
+
+    public const NUMERIC = '032';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 54;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Seychelles implements CountryInterface
 {
     public const COUNTRY = 'sc';
 
+    public const ALPHA = 'SYC';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '690';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

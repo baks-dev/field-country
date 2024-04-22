@@ -33,15 +33,21 @@ final class Cameroon implements CountryInterface
 {
     public const COUNTRY = 'cm';
 
+    public const ALPHA = 'CMR';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '120';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

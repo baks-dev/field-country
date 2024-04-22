@@ -33,15 +33,21 @@ final class Anguilla implements CountryInterface
 {
     public const COUNTRY = 'ai';
 
+    public const ALPHA = 'AIA';
+
+    public const PHONE = 1264;
+
+    public const NUMERIC = '660';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 1264;
+        return self::PHONE;
     }
 
 

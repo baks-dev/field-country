@@ -33,15 +33,21 @@ final class Tonga implements CountryInterface
 {
     public const COUNTRY = 'to';
 
+    public const ALPHA = 'TON';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '776';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class EquatorialGuinea implements CountryInterface
 {
     public const COUNTRY = 'gq';
 
+    public const ALPHA = 'GNQ';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '226';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

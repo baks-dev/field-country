@@ -33,15 +33,21 @@ final class Gabon implements CountryInterface
 {
     public const COUNTRY = 'ga';
 
+    public const ALPHA = 'GAB';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '266';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

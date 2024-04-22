@@ -33,15 +33,21 @@ final class Croatia implements CountryInterface
 {
     public const COUNTRY = 'hr';
 
+    public const ALPHA = 'HRV';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '191';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

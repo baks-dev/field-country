@@ -33,15 +33,21 @@ final class Jersey implements CountryInterface
 {
     public const COUNTRY = 'je';
 
+    public const ALPHA = 'JEY';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '832';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

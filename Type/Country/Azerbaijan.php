@@ -33,15 +33,21 @@ final class Azerbaijan implements CountryInterface
 {
     public const COUNTRY = 'az';
 
+    public const ALPHA = 'AZE';
+
+    public const PHONE = 994;
+    
+    public const NUMERIC = '031';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 994;
+        return self::PHONE;
     }
 
 

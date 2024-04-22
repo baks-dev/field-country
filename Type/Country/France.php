@@ -33,15 +33,21 @@ final class France implements CountryInterface
 {
     public const COUNTRY = 'fr';
 
+    public const ALPHA = 'FRA';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '250';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

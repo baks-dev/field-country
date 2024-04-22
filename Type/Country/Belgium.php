@@ -33,13 +33,19 @@ final class Belgium implements CountryInterface
 {
     public const COUNTRY = 'be';
 
+    public const ALPHA = 'BEL';
+
+    public const PHONE = 32;
+
+    public const NUMERIC = '056';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
         return 32;
     }

@@ -33,15 +33,21 @@ final class Egypt implements CountryInterface
 {
     public const COUNTRY = 'eg';
 
+    public const ALPHA = 'EGY';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '818';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

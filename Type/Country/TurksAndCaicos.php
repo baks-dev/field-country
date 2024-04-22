@@ -33,15 +33,21 @@ final class TurksAndCaicos implements CountryInterface
 {
     public const COUNTRY = 'tc';
 
+    public const ALPHA = 'TCA';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '796';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

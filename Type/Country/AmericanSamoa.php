@@ -33,15 +33,21 @@ final class AmericanSamoa implements CountryInterface
 {
     public const COUNTRY = 'as';
 
+    public const ALPHA = 'ASM';
+
+    public const PHONE = 684;
+
+    public const NUMERIC = '016';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 684;
+        return self::PHONE;
     }
 
 

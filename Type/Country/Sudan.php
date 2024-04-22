@@ -33,15 +33,21 @@ final class Sudan implements CountryInterface
 {
     public const COUNTRY = 'sd';
 
+    public const ALPHA = 'SDN';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '729';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

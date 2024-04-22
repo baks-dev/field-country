@@ -33,15 +33,21 @@ final class Angola implements CountryInterface
 {
     public const COUNTRY = 'ao';
 
+    public const ALPHA = 'AGO';
+
+    public const PHONE = 244;
+    
+    public const NUMERIC = '024';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 244;
+        return self::PHONE;
     }
 
 

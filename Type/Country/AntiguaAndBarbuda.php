@@ -33,17 +33,22 @@ final class AntiguaAndBarbuda implements CountryInterface
 {
     public const COUNTRY = 'ag';
 
+    public const ALPHA = 'ATG';
+
+    public const PHONE = 1268;
+
+    public const NUMERIC = '028';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 1268;
+        return self::PHONE;
     }
-
 
     /** Проверяет, относится ли значение к данному объекту */
     public static function equals(string $country): bool

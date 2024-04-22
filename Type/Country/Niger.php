@@ -33,15 +33,21 @@ final class Niger implements CountryInterface
 {
     public const COUNTRY = 'ne';
 
+    public const ALPHA = 'NER';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '562';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

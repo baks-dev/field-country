@@ -33,15 +33,21 @@ final class NewZealand implements CountryInterface
 {
     public const COUNTRY = 'nz';
 
+    public const ALPHA = 'NZL';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '554';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

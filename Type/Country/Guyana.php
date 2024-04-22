@@ -33,15 +33,21 @@ final class Guyana implements CountryInterface
 {
     public const COUNTRY = 'gy';
 
+    public const ALPHA = 'GUY';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '328';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

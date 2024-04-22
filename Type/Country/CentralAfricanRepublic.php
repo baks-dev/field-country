@@ -33,15 +33,21 @@ final class CentralAfricanRepublic implements CountryInterface
 {
     public const COUNTRY = 'cf';
 
+    public const ALPHA = 'CAF';
+
+    public const PHONE = 236;
+
+    public const NUMERIC = '140';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 236;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Russia implements CountryInterface
 {
     public const COUNTRY = 'ru';
 
+    public const ALPHA = 'RUS';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '643';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

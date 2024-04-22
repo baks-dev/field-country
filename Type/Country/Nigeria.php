@@ -33,15 +33,21 @@ final class Nigeria implements CountryInterface
 {
     public const COUNTRY = 'ng';
 
+    public const ALPHA = 'NGA';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '566';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

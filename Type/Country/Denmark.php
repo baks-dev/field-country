@@ -33,15 +33,21 @@ final class Denmark implements CountryInterface
 {
     public const COUNTRY = 'dk';
 
+    public const ALPHA = 'DNK';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '208';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class ChristmasIsland implements CountryInterface
 {
     public const COUNTRY = 'cx';
 
+    public const ALPHA = 'CXR';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '162';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Palestinian implements CountryInterface
 {
     public const COUNTRY = 'ps';
 
+    public const ALPHA = 'PSE';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '275';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

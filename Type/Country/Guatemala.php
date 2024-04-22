@@ -33,15 +33,21 @@ final class Guatemala implements CountryInterface
 {
     public const COUNTRY = 'gt';
 
+    public const ALPHA = 'GTM';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '320';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Ghana implements CountryInterface
 {
     public const COUNTRY = 'gh';
 
+    public const ALPHA = 'GHA';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '288';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

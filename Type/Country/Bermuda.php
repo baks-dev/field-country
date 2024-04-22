@@ -33,15 +33,21 @@ final class Bermuda implements CountryInterface
 {
     public const COUNTRY = 'bm';
 
+    public const ALPHA = 'BMU';
+
+    public const PHONE = 1441;
+    
+    public const NUMERIC = '060';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 1441;
+        return self::PHONE;
     }
 
 

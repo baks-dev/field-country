@@ -33,15 +33,21 @@ final class SolomonIslands implements CountryInterface
 {
     public const COUNTRY = 'sb';
 
+    public const ALPHA = 'SLB';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '090';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Ethiopia implements CountryInterface
 {
     public const COUNTRY = 'et';
 
+    public const ALPHA = 'ETH';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '231';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

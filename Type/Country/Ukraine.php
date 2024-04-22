@@ -33,15 +33,21 @@ final class Ukraine implements CountryInterface
 {
     public const COUNTRY = 'ua';
 
+    public const ALPHA = 'UKR';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '804';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

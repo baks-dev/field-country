@@ -33,13 +33,19 @@ final class Rwanda implements CountryInterface
 {
     public const COUNTRY = 'rw';
 
+    public const ALPHA = 'RWA';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '646';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
         return null;
     }

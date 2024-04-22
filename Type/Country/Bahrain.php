@@ -33,15 +33,21 @@ final class Bahrain implements CountryInterface
 {
     public const COUNTRY = 'bh';
 
+    public const ALPHA = 'BHR';
+
+    public const PHONE = 973;
+
+    public const NUMERIC = '048';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 973;
+        return self::PHONE;
     }
 
 

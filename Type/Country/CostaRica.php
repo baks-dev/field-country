@@ -33,15 +33,21 @@ final class CostaRica implements CountryInterface
 {
     public const COUNTRY = 'cr';
 
+    public const ALPHA = 'CRI';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '188';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

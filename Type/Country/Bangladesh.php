@@ -33,15 +33,21 @@ final class Bangladesh implements CountryInterface
 {
     public const COUNTRY = 'bd';
 
+    public const ALPHA = 'BGD';
+
+    public const PHONE = 880;
+
+    public const NUMERIC = '050';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 880;
+        return self::PHONE;
     }
 
 

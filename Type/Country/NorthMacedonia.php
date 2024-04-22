@@ -33,15 +33,21 @@ final class NorthMacedonia implements CountryInterface
 {
     public const COUNTRY = 'mk';
 
+    public const ALPHA = 'MKD';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '807';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Nicaragua implements CountryInterface
 {
     public const COUNTRY = 'ni';
 
+    public const ALPHA = 'NIC';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '558';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

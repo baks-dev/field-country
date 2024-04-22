@@ -33,15 +33,21 @@ final class FaroeIslands implements CountryInterface
 {
     public const COUNTRY = 'fo';
 
+    public const ALPHA = 'FRO';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '234';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

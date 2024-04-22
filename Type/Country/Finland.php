@@ -33,15 +33,21 @@ final class Finland implements CountryInterface
 {
     public const COUNTRY = 'fi';
 
+    public const ALPHA = 'FIN';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '246';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Switzerland implements CountryInterface
 {
     public const COUNTRY = 'ch';
 
+    public const ALPHA = 'CHE';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '756';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

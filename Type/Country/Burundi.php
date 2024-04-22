@@ -33,15 +33,21 @@ final class Burundi implements CountryInterface
 {
     public const COUNTRY = 'bi';
 
+    public const ALPHA = 'BDI';
+
+    public const PHONE = 257;
+    
+    public const NUMERIC = '108';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 257;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Laos implements CountryInterface
 {
     public const COUNTRY = 'la';
 
+    public const ALPHA = 'LAO';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '418';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

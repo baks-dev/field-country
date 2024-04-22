@@ -33,15 +33,21 @@ final class Qatar implements CountryInterface
 {
     public const COUNTRY = 'qa';
 
+    public const ALPHA = 'QAT';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '634';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

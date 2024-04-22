@@ -33,15 +33,21 @@ final class Vietnam implements CountryInterface
 {
     public const COUNTRY = 'vn';
 
+    public const ALPHA = '';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '704';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

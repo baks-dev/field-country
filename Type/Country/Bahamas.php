@@ -33,13 +33,19 @@ final class Bahamas implements CountryInterface
 {
     public const COUNTRY = 'bs';
 
+    public const ALPHA = 'BHS';
+
+    public const PHONE = 1242;
+
+    public const NUMERIC = '044';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
         return 1242;
     }

@@ -33,15 +33,21 @@ final class Slovakia implements CountryInterface
 {
     public const COUNTRY = 'sk';
 
+    public const ALPHA = 'SVK';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '703';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

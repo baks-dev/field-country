@@ -33,15 +33,21 @@ final class SintMaarten implements CountryInterface
 {
     public const COUNTRY = 'sx';
 
+    public const ALPHA = 'SXM';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '534';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

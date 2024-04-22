@@ -33,15 +33,21 @@ final class Kiribati implements CountryInterface
 {
     public const COUNTRY = 'ki';
 
+    public const ALPHA = 'KIR';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '296';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

@@ -33,15 +33,21 @@ final class Martinique implements CountryInterface
 {
     public const COUNTRY = 'mq';
 
+    public const ALPHA = 'MTQ';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '474';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

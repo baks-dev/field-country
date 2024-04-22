@@ -46,7 +46,7 @@ final class CountryExtension extends AbstractExtension
 	{
 		try
 		{
-			return $twig->render('@Template/field-country/content.html.twig', ['value' => $value]);
+			return $twig->render('@Template/field/country/content.html.twig', ['value' => $value]);
 		}
 		catch(LoaderError $loaderError)
 		{
@@ -58,7 +58,7 @@ final class CountryExtension extends AbstractExtension
 	{
 		try
 		{
-			return $twig->render('@Template/field-country/render.html.twig', ['value' => $value]);
+			return $twig->render('@Template/field/country/render.html.twig', ['value' => $value]);
 		}
 		catch(LoaderError $loaderError)
 		{
@@ -70,7 +70,7 @@ final class CountryExtension extends AbstractExtension
 	{
 		try
 		{
-			return $twig->render('@Template/field-country/template.html.twig', ['value' => $value]);
+			return $twig->render('@Template/field/country/template.html.twig', ['value' => $value]);
 		}
 		catch(LoaderError $loaderError)
 		{

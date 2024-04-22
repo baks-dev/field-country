@@ -33,15 +33,21 @@ final class Indonesia implements CountryInterface
 {
     public const COUNTRY = 'id';
 
+    public const ALPHA = 'IDN';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '360';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

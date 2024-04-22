@@ -33,15 +33,21 @@ final class Bhutan implements CountryInterface
 {
     public const COUNTRY = 'bt';
 
+    public const ALPHA = 'BTN';
+
+    public const PHONE = 975;
+    
+    public const NUMERIC = '064';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 975;
+        return self::PHONE;
     }
 
 

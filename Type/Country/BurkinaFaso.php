@@ -33,15 +33,21 @@ final class BurkinaFaso implements CountryInterface
 {
     public const COUNTRY = 'bf';
 
+    public const ALPHA = 'BFA';
+
+    public const PHONE = 226;
+
+    public const NUMERIC = '854';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 226;
+        return self::PHONE;
     }
 
 

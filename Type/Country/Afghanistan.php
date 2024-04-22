@@ -33,15 +33,21 @@ final class Afghanistan implements CountryInterface
 {
     public const COUNTRY = 'af';
 
+    public const ALPHA = 'AFG';
+
+    public const PHONE = 93;
+
+    public const NUMERIC = '004';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return 93;
+        return self::PHONE;
     }
 
     /** Проверяет, относится ли значение к данному объекту */

@@ -33,15 +33,21 @@ final class Eswatini implements CountryInterface
 {
     public const COUNTRY = 'sz';
 
+    public const ALPHA = 'SWZ';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '748';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

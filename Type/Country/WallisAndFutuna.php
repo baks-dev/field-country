@@ -33,15 +33,21 @@ final class WallisAndFutuna implements CountryInterface
 {
     public const COUNTRY = 'wf';
 
+    public const ALPHA = 'WLF';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '876';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

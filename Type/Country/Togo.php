@@ -33,15 +33,21 @@ final class Togo implements CountryInterface
 {
     public const COUNTRY = 'tg';
 
+    public const ALPHA = 'TGO';
+
+    public const PHONE = null;
+    
+    public const NUMERIC = '768';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

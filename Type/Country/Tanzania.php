@@ -33,15 +33,21 @@ final class Tanzania implements CountryInterface
 {
     public const COUNTRY = 'tz';
 
+    public const ALPHA = 'TZA';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '834';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 

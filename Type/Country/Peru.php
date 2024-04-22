@@ -33,15 +33,21 @@ final class Peru implements CountryInterface
 {
     public const COUNTRY = 'pe';
 
+    public const ALPHA = 'PER';
+
+    public const PHONE = null;
+
+    public const NUMERIC = '604';
+
     /** Возвращает значение (value) */
     public function getValue(): string
     {
         return self::COUNTRY;
     }
 
-    public function getCode(): ?int
+    public function getPhoneCode(): ?int
     {
-        return null;
+        return self::PHONE;
     }
 
 
