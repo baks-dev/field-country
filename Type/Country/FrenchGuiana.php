@@ -36,7 +36,7 @@ final class FrenchGuiana implements CountryInterface
     public const ALPHA = 'GUF';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '254';
 
     /** Возвращает значение (value) */

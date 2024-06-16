@@ -36,7 +36,7 @@ final class Benin implements CountryInterface
     public const ALPHA = 'BEN';
 
     public const PHONE = 229;
-    
+
     public const NUMERIC = '204';
 
     /** Возвращает значение (value) */

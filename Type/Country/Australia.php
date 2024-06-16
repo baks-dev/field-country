@@ -36,7 +36,7 @@ final class Australia implements CountryInterface
     public const ALPHA = 'AUS';
 
     public const PHONE = 61;
-    
+
     public const NUMERIC = '036';
 
     /** Возвращает значение (value) */

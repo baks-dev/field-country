@@ -36,7 +36,7 @@ final class Austria implements CountryInterface
     public const ALPHA = 'AUT';
 
     public const PHONE = 43;
-    
+
     public const NUMERIC = '040';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Angola implements CountryInterface
     public const ALPHA = 'AGO';
 
     public const PHONE = 244;
-    
+
     public const NUMERIC = '024';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Iran implements CountryInterface
     public const ALPHA = 'IRN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '364';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Netherlands implements CountryInterface
     public const ALPHA = 'NLD';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '528';
 
     /** Возвращает значение (value) */

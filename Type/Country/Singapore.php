@@ -36,7 +36,7 @@ final class Singapore implements CountryInterface
     public const ALPHA = 'SGP';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '702';
 
     /** Возвращает значение (value) */

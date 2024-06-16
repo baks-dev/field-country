@@ -32,27 +32,27 @@ use BaksDev\Field\Country\Type\Country;
 
 final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoiceInterface
 {
-	public function equals($key) : bool
-	{
-		return $key === Country::TYPE;
-	}
-	
-	public function type(): string
-	{
-		return Country::TYPE;
-	}
-	
-	
-	public function domain(): string
-	{
-		return 'field-country';
-	}
-	
-	/** Возвращает класс формы для рендера */
-	public function form(): string
-	{
-		return CountryFieldForm::class;
-	}
+    public function equals($key): bool
+    {
+        return $key === Country::TYPE;
+    }
+
+    public function type(): string
+    {
+        return Country::TYPE;
+    }
+
+
+    public function domain(): string
+    {
+        return 'field-country';
+    }
+
+    /** Возвращает класс формы для рендера */
+    public function form(): string
+    {
+        return CountryFieldForm::class;
+    }
 
     public function class(): string
     {
@@ -63,5 +63,5 @@ final class CountryFieldChoice implements FieldsChoiceInterface, ReferenceChoice
     {
         return null;
     }
-	
+
 }

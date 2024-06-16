@@ -36,7 +36,7 @@ final class Taiwan implements CountryInterface
     public const ALPHA = 'TWN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '158';
 
     /** Возвращает значение (value) */

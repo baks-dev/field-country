@@ -36,7 +36,7 @@ final class China implements CountryInterface
     public const ALPHA = 'CHN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '156';
 
     /** Возвращает значение (value) */

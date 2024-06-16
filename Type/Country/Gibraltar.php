@@ -36,7 +36,7 @@ final class Gibraltar implements CountryInterface
     public const ALPHA = 'GIB';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '292';
 
     /** Возвращает значение (value) */

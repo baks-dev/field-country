@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace BaksDev\Field\Country;
 
-use DirectoryIterator;
+use BaksDev\Field\Country\Choice\CountryFieldChoice;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
@@ -50,5 +50,9 @@ class BaksDevFieldCountryBundle extends AbstractBundle
             self::NAMESPACE.'Type\Country\\',
             self::PATH.'Type/Country'
         );
+
+        $services
+            ->set(CountryFieldChoice::class)
+            ->tag('baks.fields.choice');
     }
 }

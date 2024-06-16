@@ -36,7 +36,7 @@ final class Suriname implements CountryInterface
     public const ALPHA = 'SUR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '740';
 
     /** Возвращает значение (value) */

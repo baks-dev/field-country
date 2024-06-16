@@ -36,7 +36,7 @@ final class Nepal implements CountryInterface
     public const ALPHA = 'NPL';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '524';
 
     /** Возвращает значение (value) */

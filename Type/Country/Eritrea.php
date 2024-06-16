@@ -36,7 +36,7 @@ final class Eritrea implements CountryInterface
     public const ALPHA = 'ERI';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '232';
 
     /** Возвращает значение (value) */

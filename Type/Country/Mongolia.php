@@ -36,7 +36,7 @@ final class Mongolia implements CountryInterface
     public const ALPHA = 'MNG';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '496';
 
     /** Возвращает значение (value) */

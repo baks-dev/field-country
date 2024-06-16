@@ -36,7 +36,7 @@ final class France implements CountryInterface
     public const ALPHA = 'FRA';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '250';
 
     /** Возвращает значение (value) */

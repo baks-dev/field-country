@@ -36,7 +36,7 @@ final class Fiji implements CountryInterface
     public const ALPHA = 'FJI';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '242';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Colombia implements CountryInterface
     public const ALPHA = 'COL';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '170';
 
     /** Возвращает значение (value) */

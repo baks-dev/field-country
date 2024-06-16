@@ -36,7 +36,7 @@ final class Morocco implements CountryInterface
     public const ALPHA = 'MAR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '504';
 
     /** Возвращает значение (value) */

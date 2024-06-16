@@ -36,7 +36,7 @@ final class Tuvalu implements CountryInterface
     public const ALPHA = 'TUV';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '798';
 
     /** Возвращает значение (value) */

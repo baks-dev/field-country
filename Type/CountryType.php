@@ -31,35 +31,35 @@ use Doctrine\DBAL\Types\Type;
 
 final class CountryType extends Type
 {
-	public const NAME = 'country_type';
-	
-	
-	public function convertToDatabaseValue($value, AbstractPlatform $platform): string
-	{
-		return (string) $value;
-	}
-	
-	
-	public function convertToPHPValue($value, AbstractPlatform $platform): ?Country
-	{
+    public const NAME = 'country_type';
+
+
+    public function convertToDatabaseValue($value, AbstractPlatform $platform): string
+    {
+        return (string) $value;
+    }
+
+
+    public function convertToPHPValue($value, AbstractPlatform $platform): ?Country
+    {
         return !empty($value) ? new Country($value) : null;
-	}
-	
-	
-	public function getName(): string
-	{
-		return self::NAME;
-	}
-	
-	
-	public function requiresSQLCommentHint(AbstractPlatform $platform) : bool
-	{
-		return true;
-	}
+    }
+
+
+    public function getName(): string
+    {
+        return self::NAME;
+    }
+
+
+    public function requiresSQLCommentHint(AbstractPlatform $platform): bool
+    {
+        return true;
+    }
 
     public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
     {
         return $platform->getStringTypeDeclarationSQL($column);
     }
-	
+
 }

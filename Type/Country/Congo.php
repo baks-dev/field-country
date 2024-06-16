@@ -36,7 +36,7 @@ final class Congo implements CountryInterface
     public const ALPHA = 'COG';
 
     public const PHONE = 242;
-    
+
     public const NUMERIC = '178';
 
     /** Возвращает значение (value) */

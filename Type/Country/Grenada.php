@@ -36,7 +36,7 @@ final class Grenada implements CountryInterface
     public const ALPHA = 'GRD';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '308';
 
     /** Возвращает значение (value) */

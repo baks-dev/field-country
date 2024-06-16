@@ -36,7 +36,7 @@ final class KoreaSouth implements CountryInterface
     public const ALPHA = 'KOR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '410';
 
     /** Возвращает значение (value) */

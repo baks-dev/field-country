@@ -36,7 +36,7 @@ final class SanMarino implements CountryInterface
     public const ALPHA = 'SMR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '674';
 
     /** Возвращает значение (value) */

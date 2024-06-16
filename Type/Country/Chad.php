@@ -36,7 +36,7 @@ final class Chad implements CountryInterface
     public const ALPHA = 'TCD';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '148';
 
     /** Возвращает значение (value) */

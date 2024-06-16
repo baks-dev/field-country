@@ -36,7 +36,7 @@ final class Israel implements CountryInterface
     public const ALPHA = 'ISR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '376';
 
     /** Возвращает значение (value) */

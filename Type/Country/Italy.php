@@ -36,7 +36,7 @@ final class Italy implements CountryInterface
     public const ALPHA = 'ITA';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '380';
 
     /** Возвращает значение (value) */

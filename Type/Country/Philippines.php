@@ -36,7 +36,7 @@ final class Philippines implements CountryInterface
     public const ALPHA = 'PHL';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '608';
 
     /** Возвращает значение (value) */

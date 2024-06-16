@@ -30,14 +30,14 @@ use InvalidArgumentException;
 
 final class Country
 {
-	
-	public const TYPE = 'country_type';
-	
-	private CountryInterface $country;
-	
-	
-	public function __construct(CountryInterface|self|string $country)
-	{
+
+    public const TYPE = 'country_type';
+
+    private CountryInterface $country;
+
+
+    public function __construct(CountryInterface|self|string $country)
+    {
         if(is_string($country) && class_exists($country))
         {
             $instance = new $country();
@@ -73,24 +73,24 @@ final class Country
 
         throw new InvalidArgumentException(sprintf('Not found Country %s', $country));
 
-	}
+    }
 
-	public function __toString(): string
-	{
-		return $this->country->getValue();
-	}
+    public function __toString(): string
+    {
+        return $this->country->getValue();
+    }
 
-	public function getCountry() : CountryInterface
-	{
-		return $this->country;
-	}
-	
+    public function getCountry(): CountryInterface
+    {
+        return $this->country;
+    }
 
-	public function getCountryValue(): string
-	{
-		return $this->country->getValue();
-	}
-	
+
+    public function getCountryValue(): string
+    {
+        return $this->country->getValue();
+    }
+
 
     public static function cases(): array
     {
@@ -126,10 +126,4 @@ final class Country
     }
 
 
-
-
-
-
-
-	
 }

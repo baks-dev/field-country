@@ -36,7 +36,7 @@ final class VirginIslandsBritish implements CountryInterface
     public const ALPHA = 'VGB';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '092';
 
     /** Возвращает значение (value) */

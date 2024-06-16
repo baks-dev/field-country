@@ -36,7 +36,7 @@ final class Aruba implements CountryInterface
     public const ALPHA = 'ABW';
 
     public const PHONE = 297;
-    
+
     public const NUMERIC = '533';
 
     /** Возвращает значение (value) */

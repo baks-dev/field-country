@@ -36,7 +36,7 @@ final class Thailand implements CountryInterface
     public const ALPHA = 'THA';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '764';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Bermuda implements CountryInterface
     public const ALPHA = 'BMU';
 
     public const PHONE = 1441;
-    
+
     public const NUMERIC = '060';
 
     /** Возвращает значение (value) */

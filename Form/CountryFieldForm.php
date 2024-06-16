@@ -26,7 +26,6 @@ declare(strict_types=1);
 namespace BaksDev\Field\Country\Form;
 
 use BaksDev\Field\Country\Type\Country;
-use BaksDev\Field\Country\Type\Country\Collection\CountryInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -34,40 +33,40 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 final class CountryFieldForm extends AbstractType
 {
-	private CountryFieldTransformer $transformer;
-	
-	
-	public function __construct(CountryFieldTransformer $transformer)
-	{
-		$this->transformer = $transformer;
-	}
-	
-	public function buildForm(FormBuilderInterface $builder, array $options) : void
-	{
-		$builder->addModelTransformer($this->transformer);
-	}
-	
-	
-	public function configureOptions(OptionsResolver $resolver) : void
-	{
+    private CountryFieldTransformer $transformer;
 
-		$resolver->setDefaults([
-			'choices' => Country::cases(),
-			'choice_value' => function(?Country $country) {
-				return $country?->getCountryValue();
-			},
-			'choice_label' => function(Country $country) {
-				return $country->getCountryValue();
-			},
-			'translation_domain' => 'field-country',
-			'placeholder' => 'placeholder',
-			'attr' => ['data-select' => 'select2']
-		]);
-	}
-	
-	public function getParent(): string
+
+    public function __construct(CountryFieldTransformer $transformer)
     {
-		return ChoiceType::class;
-	}
-	
+        $this->transformer = $transformer;
+    }
+
+    public function buildForm(FormBuilderInterface $builder, array $options): void
+    {
+        $builder->addModelTransformer($this->transformer);
+    }
+
+
+    public function configureOptions(OptionsResolver $resolver): void
+    {
+
+        $resolver->setDefaults([
+            'choices' => Country::cases(),
+            'choice_value' => function(?Country $country) {
+                return $country?->getCountryValue();
+            },
+            'choice_label' => function(Country $country) {
+                return $country->getCountryValue();
+            },
+            'translation_domain' => 'field-country',
+            'placeholder' => 'placeholder',
+            'attr' => ['data-select' => 'select2']
+        ]);
+    }
+
+    public function getParent(): string
+    {
+        return ChoiceType::class;
+    }
+
 }

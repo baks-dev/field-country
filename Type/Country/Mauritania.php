@@ -36,7 +36,7 @@ final class Mauritania implements CountryInterface
     public const ALPHA = 'MRT';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '478';
 
     /** Возвращает значение (value) */

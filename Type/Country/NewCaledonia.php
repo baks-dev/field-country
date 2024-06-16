@@ -36,7 +36,7 @@ final class NewCaledonia implements CountryInterface
     public const ALPHA = 'NCL';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '540';
 
     /** Возвращает значение (value) */

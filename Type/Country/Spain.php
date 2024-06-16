@@ -36,7 +36,7 @@ final class Spain implements CountryInterface
     public const ALPHA = 'ESP';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '724';
 
     /** Возвращает значение (value) */

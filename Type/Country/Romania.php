@@ -36,7 +36,7 @@ final class Romania implements CountryInterface
     public const ALPHA = 'ROU';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '642';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class SaintVincentAndGrenadines implements CountryInterface
     public const ALPHA = 'VCT';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '670';
 
     /** Возвращает значение (value) */

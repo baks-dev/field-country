@@ -36,7 +36,7 @@ final class Vietnam implements CountryInterface
     public const ALPHA = '';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '704';
 
     /** Возвращает значение (value) */

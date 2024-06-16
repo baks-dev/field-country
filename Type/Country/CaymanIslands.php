@@ -36,7 +36,7 @@ final class CaymanIslands implements CountryInterface
     public const ALPHA = 'CYM';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '136';
 
     /** Возвращает значение (value) */

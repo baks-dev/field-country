@@ -36,7 +36,7 @@ final class SolomonIslands implements CountryInterface
     public const ALPHA = 'SLB';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '090';
 
     /** Возвращает значение (value) */

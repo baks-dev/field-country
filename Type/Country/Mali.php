@@ -36,7 +36,7 @@ final class Mali implements CountryInterface
     public const ALPHA = 'MLI';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '466';
 
     /** Возвращает значение (value) */

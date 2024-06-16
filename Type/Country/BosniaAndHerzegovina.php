@@ -36,7 +36,7 @@ final class BosniaAndHerzegovina implements CountryInterface
     public const ALPHA = 'BIH';
 
     public const PHONE = 387;
-    
+
     public const NUMERIC = '070';
 
     /** Возвращает значение (value) */

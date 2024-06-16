@@ -36,7 +36,7 @@ final class Panama implements CountryInterface
     public const ALPHA = 'PAN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '591';
 
     /** Возвращает значение (value) */

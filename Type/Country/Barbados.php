@@ -36,7 +36,7 @@ final class Barbados implements CountryInterface
     public const ALPHA = 'BRB';
 
     public const PHONE = 1246;
-    
+
     public const NUMERIC = '052';
 
     /** Возвращает значение (value) */

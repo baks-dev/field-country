@@ -36,7 +36,7 @@ final class Japan implements CountryInterface
     public const ALPHA = 'JPN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '392';
 
     /** Возвращает значение (value) */

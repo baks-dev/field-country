@@ -36,7 +36,7 @@ final class Tunisia implements CountryInterface
     public const ALPHA = 'TUN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '788';
 
     /** Возвращает значение (value) */

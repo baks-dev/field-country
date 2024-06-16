@@ -36,7 +36,7 @@ final class Kuwait implements CountryInterface
     public const ALPHA = 'KWT';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '414';
 
     /** Возвращает значение (value) */

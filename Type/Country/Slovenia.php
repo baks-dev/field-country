@@ -36,7 +36,7 @@ final class Slovenia implements CountryInterface
     public const ALPHA = 'SVN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '705';
 
     /** Возвращает значение (value) */

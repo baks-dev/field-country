@@ -36,7 +36,7 @@ final class SaudiArabia implements CountryInterface
     public const ALPHA = 'SAU';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '682';
 
     /** Возвращает значение (value) */

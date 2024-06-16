@@ -36,7 +36,7 @@ final class Belize implements CountryInterface
     public const ALPHA = 'BLZ';
 
     public const PHONE = 501;
-    
+
     public const NUMERIC = '084';
 
     /** Возвращает значение (value) */

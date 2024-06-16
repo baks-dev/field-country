@@ -32,7 +32,8 @@ final class CountryCollection
     private iterable $status;
 
     public function __construct(
-        #[TaggedIterator('baks.country')] iterable $status)
+        #[TaggedIterator('baks.country')] iterable $status
+    )
     {
         $this->status = $status;
     }
@@ -42,7 +43,8 @@ final class CountryCollection
     {
         $case = null;
 
-        foreach ($this->status as $status) {
+        foreach($this->status as $status)
+        {
             $case[] = new $status();
         }
 

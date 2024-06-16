@@ -36,7 +36,7 @@ final class Pitcairn implements CountryInterface
     public const ALPHA = 'PCN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '612';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Indonesia implements CountryInterface
     public const ALPHA = 'IDN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '360';
 
     /** Возвращает значение (value) */

@@ -36,7 +36,7 @@ final class Burundi implements CountryInterface
     public const ALPHA = 'BDI';
 
     public const PHONE = 257;
-    
+
     public const NUMERIC = '108';
 
     /** Возвращает значение (value) */

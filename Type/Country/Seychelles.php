@@ -36,7 +36,7 @@ final class Seychelles implements CountryInterface
     public const ALPHA = 'SYC';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '690';
 
     /** Возвращает значение (value) */

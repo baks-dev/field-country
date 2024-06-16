@@ -36,7 +36,7 @@ final class Jamaica implements CountryInterface
     public const ALPHA = 'JAM';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '388';
 
     /** Возвращает значение (value) */

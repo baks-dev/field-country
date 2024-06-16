@@ -36,7 +36,7 @@ final class Reunion implements CountryInterface
     public const ALPHA = 'REU';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '638';
 
     /** Возвращает значение (value) */

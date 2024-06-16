@@ -36,7 +36,7 @@ final class DominicanRepublic implements CountryInterface
     public const ALPHA = 'DOM';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '214';
 
     /** Возвращает значение (value) */

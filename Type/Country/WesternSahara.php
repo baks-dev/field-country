@@ -36,7 +36,7 @@ final class WesternSahara implements CountryInterface
     public const ALPHA = 'ESH';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '732';
 
     /** Возвращает значение (value) */

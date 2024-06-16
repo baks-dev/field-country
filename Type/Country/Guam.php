@@ -36,7 +36,7 @@ final class Guam implements CountryInterface
     public const ALPHA = 'GUM';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '316';
 
     /** Возвращает значение (value) */

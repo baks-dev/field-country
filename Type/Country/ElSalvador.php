@@ -36,7 +36,7 @@ final class ElSalvador implements CountryInterface
     public const ALPHA = 'SLV';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '222';
 
     /** Возвращает значение (value) */

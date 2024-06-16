@@ -36,7 +36,7 @@ final class Guernsey implements CountryInterface
     public const ALPHA = 'GGY';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '831';
 
     /** Возвращает значение (value) */

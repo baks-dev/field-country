@@ -36,7 +36,7 @@ final class Somalia implements CountryInterface
     public const ALPHA = 'SOM';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '706';
 
     /** Возвращает значение (value) */

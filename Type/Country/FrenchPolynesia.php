@@ -36,7 +36,7 @@ final class FrenchPolynesia implements CountryInterface
     public const ALPHA = 'PYF';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '258';
 
     /** Возвращает значение (value) */

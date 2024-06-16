@@ -36,7 +36,7 @@ final class Norway implements CountryInterface
     public const ALPHA = 'NOR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '578';
 
     /** Возвращает значение (value) */

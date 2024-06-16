@@ -36,7 +36,7 @@ final class Uganda implements CountryInterface
     public const ALPHA = 'UGA';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '800';
 
     /** Возвращает значение (value) */

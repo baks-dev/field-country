@@ -36,7 +36,7 @@ final class Paraguay implements CountryInterface
     public const ALPHA = 'PRY';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '600';
 
     /** Возвращает значение (value) */

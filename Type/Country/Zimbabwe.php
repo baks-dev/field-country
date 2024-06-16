@@ -36,7 +36,7 @@ final class Zimbabwe implements CountryInterface
     public const ALPHA = 'ZWE';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '716';
 
     /** Возвращает значение (value) */

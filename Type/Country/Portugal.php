@@ -36,7 +36,7 @@ final class Portugal implements CountryInterface
     public const ALPHA = 'PRT';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '620';
 
     /** Возвращает значение (value) */

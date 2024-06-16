@@ -36,7 +36,7 @@ final class Jordan implements CountryInterface
     public const ALPHA = 'JOR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '400';
 
     /** Возвращает значение (value) */

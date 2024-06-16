@@ -36,7 +36,7 @@ final class FrenchSouthern implements CountryInterface
     public const ALPHA = 'ATF';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '260';
 
     /** Возвращает значение (value) */

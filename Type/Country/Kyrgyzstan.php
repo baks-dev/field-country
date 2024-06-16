@@ -36,7 +36,7 @@ final class Kyrgyzstan implements CountryInterface
     public const ALPHA = 'KGZ';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '417';
 
     /** Возвращает значение (value) */

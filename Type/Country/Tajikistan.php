@@ -36,7 +36,7 @@ final class Tajikistan implements CountryInterface
     public const ALPHA = 'TJK';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '762';
 
     /** Возвращает значение (value) */

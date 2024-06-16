@@ -36,7 +36,7 @@ final class Lesotho implements CountryInterface
     public const ALPHA = 'LSO';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '426';
 
     /** Возвращает значение (value) */

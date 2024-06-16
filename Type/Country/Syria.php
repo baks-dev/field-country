@@ -36,7 +36,7 @@ final class Syria implements CountryInterface
     public const ALPHA = 'SYR';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '760';
 
     /** Возвращает значение (value) */

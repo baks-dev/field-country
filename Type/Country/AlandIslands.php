@@ -36,7 +36,7 @@ final class AlandIslands implements CountryInterface
     public const ALPHA = 'ALA';
 
     public const PHONE = 35818;
-    
+
     public const NUMERIC = '248';
 
     /** Возвращает значение (value) */

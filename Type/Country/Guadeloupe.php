@@ -36,7 +36,7 @@ final class Guadeloupe implements CountryInterface
     public const ALPHA = 'GLP';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '312';
 
     /** Возвращает значение (value) */

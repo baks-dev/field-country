@@ -36,7 +36,7 @@ final class SaintLucia implements CountryInterface
     public const ALPHA = 'LCA';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '662';
 
     /** Возвращает значение (value) */

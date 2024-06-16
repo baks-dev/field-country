@@ -36,7 +36,7 @@ final class Canada implements CountryInterface
     public const ALPHA = 'CAN';
 
     public const PHONE = 1;
-    
+
     public const NUMERIC = '124';
 
     /** Возвращает значение (value) */

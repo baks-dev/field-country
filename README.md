@@ -1,4 +1,4 @@
-# BaksDev Field Country 
+# BaksDev Field Country
 
 [![Version](https://img.shields.io/badge/version-7.1.3-blue)](https://github.com/baks-dev/field-country/releases)
 ![php 8.3+](https://img.shields.io/badge/php-min%208.3-red.svg)
@@ -41,11 +41,12 @@ return static function (ContainerConfigurator $configurator) {
 ```
 
 ## Переопределение шаблонов
-Шаблоны переопределяются в директории templates в виде текстового представления (content.html.twig), и шаблона (template.html.twig)
+
+Шаблоны переопределяются в директории templates в виде текстового представления (content.html.twig), и шаблона (
+template.html.twig)
 
 - /templates/field-country/content.html.twig
 - /templates/field-country/template.html.twig
-
 
 ## Лицензия ![License](https://img.shields.io/badge/MIT-green)
 

@@ -36,7 +36,7 @@ final class KoreaNorth implements CountryInterface
     public const ALPHA = 'PRK';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '408';
 
     /** Возвращает значение (value) */

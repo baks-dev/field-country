@@ -36,7 +36,7 @@ final class Mozambique implements CountryInterface
     public const ALPHA = 'MOZ';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '508';
 
     /** Возвращает значение (value) */

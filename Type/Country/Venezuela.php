@@ -36,7 +36,7 @@ final class Venezuela implements CountryInterface
     public const ALPHA = '';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '862';
 
     /** Возвращает значение (value) */

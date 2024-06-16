@@ -36,7 +36,7 @@ final class Serbia implements CountryInterface
     public const ALPHA = 'SRB';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '688';
 
     /** Возвращает значение (value) */

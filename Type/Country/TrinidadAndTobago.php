@@ -36,7 +36,7 @@ final class TrinidadAndTobago implements CountryInterface
     public const ALPHA = 'TTO';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '780';
 
     /** Возвращает значение (value) */

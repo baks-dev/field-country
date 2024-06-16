@@ -36,7 +36,7 @@ final class Belarus implements CountryInterface
     public const ALPHA = 'BLR';
 
     public const PHONE = 375;
-    
+
     public const NUMERIC = '112';
 
     /** Возвращает значение (value) */

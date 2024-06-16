@@ -36,7 +36,7 @@ final class Brazil implements CountryInterface
     public const ALPHA = 'BRA';
 
     public const PHONE = 55;
-    
+
     public const NUMERIC = '076';
 
     /** Возвращает значение (value) */

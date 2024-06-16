@@ -36,7 +36,7 @@ final class Kenya implements CountryInterface
     public const ALPHA = 'KEN';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '404';
 
     /** Возвращает значение (value) */

@@ -30,18 +30,21 @@ use Symfony\Component\Form\DataTransformerInterface;
 
 final class CountryFieldTransformer implements DataTransformerInterface
 {
-	
-	public function transform(mixed $value): ?Country
+
+    public function transform(mixed $value): ?Country
     {
-		if(empty($value)) { return null; }
-		
-		return new Country($value);
-	}
-	
-	
-	public function reverseTransform(mixed $value): string
-	{
-		return (string) $value;
-	}
-	
+        if(empty($value))
+        {
+            return null;
+        }
+
+        return new Country($value);
+    }
+
+
+    public function reverseTransform(mixed $value): string
+    {
+        return (string) $value;
+    }
+
 }

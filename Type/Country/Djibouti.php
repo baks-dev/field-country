@@ -36,7 +36,7 @@ final class Djibouti implements CountryInterface
     public const ALPHA = 'DJI';
 
     public const PHONE = null;
-    
+
     public const NUMERIC = '262';
 
     /** Возвращает значение (value) */
