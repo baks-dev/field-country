@@ -25,14 +25,14 @@ declare(strict_types=1);
 
 namespace BaksDev\Field\Country\Type\Country\Collection;
 
-use Symfony\Component\DependencyInjection\Attribute\TaggedIterator;
+use Symfony\Component\DependencyInjection\Attribute\AutowireIterator;
 
 final class CountryCollection
 {
     private iterable $status;
 
     public function __construct(
-        #[TaggedIterator('baks.country')] iterable $status
+        #[AutowireIterator('baks.country')] iterable $status
     )
     {
         $this->status = $status;
