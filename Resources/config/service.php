@@ -24,15 +24,28 @@
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use BaksDev\Field\Country\BaksDevFieldCountryBundle;
-use Symfony\Config\FrameworkConfig;
+use BaksDev\Field\Country\Choice\CountryFieldChoice;
 
-return static function(FrameworkConfig $config) {
+return static function (ContainerConfigurator $configurator) {
 
-    $config
-        ->translator()
-        ->paths([BaksDevFieldCountryBundle::PATH.'Resources/translations/']);
+    $services = $configurator->services()
+        ->defaults()
+        ->autowire(true)
+        ->autoconfigure(true);
+
+    $NAMESPACE = BaksDevFieldCountryBundle::NAMESPACE;
+    $PATH = BaksDevFieldCountryBundle::PATH;
+
+    $services->load($NAMESPACE.'Form\\', $PATH.'Form');
+
+    $services->load($NAMESPACE.'Twig\\', $PATH.'Twig');
+
+    $services->load($NAMESPACE.'Listeners\\', $PATH.'Listeners');
+
+    $services->load($NAMESPACE.'Type\Country\\', $PATH.implode(DIRECTORY_SEPARATOR, ['Type', 'Country']));
+
+    $services
+        ->set(CountryFieldChoice::class)
+        ->tag('baks.fields.choice');
 
 };
-
-
-

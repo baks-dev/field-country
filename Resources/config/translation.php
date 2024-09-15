@@ -24,25 +24,12 @@
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use BaksDev\Field\Country\BaksDevFieldCountryBundle;
+use Symfony\Config\FrameworkConfig;
 
-return static function (ContainerConfigurator $configurator) {
-	
-	$services = $configurator->services()
-		->defaults()
-		->autowire(true)
-		->autoconfigure(true)
-	;
+return static function (FrameworkConfig $config) {
 
-    $NAMESPACE = BaksDevFieldCountryBundle::NAMESPACE;
-    $PATH = BaksDevFieldCountryBundle::PATH;
-
-	$services->load($NAMESPACE.'Form\\', $PATH.'Form');
-
-	$services->load($NAMESPACE.'Twig\\', $PATH.'Twig');
-
-	$services->load($NAMESPACE.'Listeners\\', $PATH.'Listeners');
-
-	$services->load($NAMESPACE.'Type\Country\\', $PATH.'Type/Country');
+    $config
+        ->translator()
+        ->paths([BaksDevFieldCountryBundle::PATH.implode(DIRECTORY_SEPARATOR, ['Resources', 'translations', ''])]); // .'Resources/translations/']);
 
 };
-
