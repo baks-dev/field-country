@@ -31,7 +31,7 @@ use InvalidArgumentException;
 final class Country
 {
 
-    public const TYPE = 'country_type';
+    public const string TYPE = 'country_type';
 
     private CountryInterface $country;
 
