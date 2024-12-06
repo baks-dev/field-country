@@ -31,13 +31,18 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag('baks.country')]
 final class Tokelau implements CountryInterface
 {
-    public const COUNTRY = 'tk';
+    public const string COUNTRY = 'tk';
 
-    public const ALPHA = 'TKL';
+    public const string ALPHA = 'TKL';
 
-    public const PHONE = null;
+    public const ?int PHONE = null;
 
-    public const NUMERIC = '772';
+    public const string NUMERIC= '772';
+
+    public function __toString(): string
+    {
+        return self::COUNTRY;
+    }
 
     /** Возвращает значение (value) */
     public function getValue(): string
@@ -52,8 +57,10 @@ final class Tokelau implements CountryInterface
 
 
     /** Проверяет, относится ли значение к данному объекту */
-    public static function equals(string $country): bool
+    public static function equals(mixed $country): bool
     {
+        $country = (string) $country;
+
         return mb_strtolower($country) === self::COUNTRY;
     }
 }

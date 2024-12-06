@@ -31,13 +31,18 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag('baks.country')]
 final class Burundi implements CountryInterface
 {
-    public const COUNTRY = 'bi';
+    public const string COUNTRY = 'bi';
 
-    public const ALPHA = 'BDI';
+    public const string ALPHA = 'BDI';
 
-    public const PHONE = 257;
+    public const ?int PHONE = 257;
 
-    public const NUMERIC = '108';
+    public const string NUMERIC= '108';
+
+    public function __toString(): string
+    {
+        return self::COUNTRY;
+    }
 
     /** Возвращает значение (value) */
     public function getValue(): string
@@ -52,8 +57,10 @@ final class Burundi implements CountryInterface
 
 
     /** Проверяет, относится ли значение к данному объекту */
-    public static function equals(string $country): bool
+    public static function equals(mixed $country): bool
     {
+        $country = (string) $country;
+
         return mb_strtolower($country) === self::COUNTRY;
     }
 }

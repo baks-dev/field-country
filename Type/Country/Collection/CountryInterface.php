@@ -30,6 +30,8 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag('baks.country')]
 interface CountryInterface
 {
+    public function __toString(): string;
+
     /** Возвращает значение (value) */
     public function getValue(): string;
 
@@ -37,7 +39,7 @@ interface CountryInterface
     public function getPhoneCode(): ?int;
 
     /** Проверяет, относится ли значение к данному объекту */
-    public static function equals(string $country): bool;
+    public static function equals(mixed $country): bool;
 
 
 }

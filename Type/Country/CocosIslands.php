@@ -31,13 +31,18 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag('baks.country')]
 final class CocosIslands implements CountryInterface
 {
-    public const COUNTRY = 'cc';
+    public const string COUNTRY = 'cc';
 
-    public const ALPHA = 'CCK';
+    public const string ALPHA = 'CCK';
 
-    public const PHONE = 618;
+    public const ?int PHONE = 618;
 
-    public const NUMERIC = '166';
+    public const string NUMERIC= '166';
+
+    public function __toString(): string
+    {
+        return self::COUNTRY;
+    }
 
     /** Возвращает значение (value) */
     public function getValue(): string
@@ -52,8 +57,10 @@ final class CocosIslands implements CountryInterface
 
 
     /** Проверяет, относится ли значение к данному объекту */
-    public static function equals(string $country): bool
+    public static function equals(mixed $country): bool
     {
+        $country = (string) $country;
+
         return mb_strtolower($country) === self::COUNTRY;
     }
 }

@@ -31,13 +31,18 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag('baks.country')]
 final class Bermuda implements CountryInterface
 {
-    public const COUNTRY = 'bm';
+    public const string COUNTRY = 'bm';
 
-    public const ALPHA = 'BMU';
+    public const string ALPHA = 'BMU';
 
-    public const PHONE = 1441;
+    public const ?int PHONE = 1441;
 
-    public const NUMERIC = '060';
+    public const string NUMERIC= '060';
+
+    public function __toString(): string
+    {
+        return self::COUNTRY;
+    }
 
     /** Возвращает значение (value) */
     public function getValue(): string
@@ -52,8 +57,10 @@ final class Bermuda implements CountryInterface
 
 
     /** Проверяет, относится ли значение к данному объекту */
-    public static function equals(string $country): bool
+    public static function equals(mixed $country): bool
     {
+        $country = (string) $country;
+
         return mb_strtolower($country) === self::COUNTRY;
     }
 }

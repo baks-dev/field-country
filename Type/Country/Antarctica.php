@@ -31,13 +31,18 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag('baks.country')]
 final class Antarctica implements CountryInterface
 {
-    public const COUNTRY = 'aq';
+    public const string COUNTRY = 'aq';
 
-    public const ALPHA = 'ATA';
+    public const string ALPHA = 'ATA';
 
-    public const PHONE = 672;
+    public const ?int PHONE = 672;
 
-    public const NUMERIC = '010';
+    public const string NUMERIC= '010';
+
+    public function __toString(): string
+    {
+        return self::COUNTRY;
+    }
 
     /** Возвращает значение (value) */
     public function getValue(): string
@@ -52,8 +57,10 @@ final class Antarctica implements CountryInterface
 
 
     /** Проверяет, относится ли значение к данному объекту */
-    public static function equals(string $country): bool
+    public static function equals(mixed $country): bool
     {
+        $country = (string) $country;
+
         return mb_strtolower($country) === self::COUNTRY;
     }
 }

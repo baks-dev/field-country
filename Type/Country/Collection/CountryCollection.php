@@ -43,9 +43,9 @@ final class CountryCollection
     {
         $case = null;
 
-        foreach($this->status as $status)
+        foreach($this->status as $country)
         {
-            $case[] = new $status();
+            $case[] = new $country();
         }
 
         return $case;
