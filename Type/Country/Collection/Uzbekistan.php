@@ -40,8 +40,12 @@ final class Uzbekistan implements CountryInterface
     public const string NUMERIC = '860';
 
     public const array HAYSTACK = [
+        'Узбекистан',
+        'Uzbekistan',
         self::COUNTRY,
-        self::ALPHA,
+        self::NUMERIC,
+        //self::ALPHA,
+        //self::PHONE,
     ];
 
     public function __toString(): string
