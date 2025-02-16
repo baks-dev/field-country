@@ -76,7 +76,7 @@ final class Sweden implements CountryInterface
     public static function filter(string $country): string
     {
         $country = (string) str_ireplace(self::HAYSTACK, '', $country);
-        $country = preg_replace('/\s/', ' ', $country);
+        $country = preg_replace('/\s+/', ' ', $country);
 
         return trim($country);
     }
