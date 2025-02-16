@@ -66,7 +66,7 @@ final class Honduras implements CountryInterface
     {
         return array_any(
             self::HAYSTACK,
-            static fn($item) => str_contains(mb_strtolower($country), mb_strtolower($item))
+            static fn($item) => str_contains(mb_strtolower((string) $country), mb_strtolower((string) $item))
         );
     }
 
