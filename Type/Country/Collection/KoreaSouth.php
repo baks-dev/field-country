@@ -42,6 +42,8 @@ final class KoreaSouth implements CountryInterface
     public const array HAYSTACK = [
         self::COUNTRY,
         self::ALPHA,
+        'Корея',
+        'Республика Корея',
     ];
 
     public function __toString(): string
